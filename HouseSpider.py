@@ -10,7 +10,10 @@ from bs4 import BeautifulSoup
 from House import House
 from datetime import datetime
 
-list_url='https://hz.lianjia.com/chengjiao/gongshu'
+#数据页面
+list_url='https://xa.lianjia.com/chengjiao/'
+#数据总页数
+totalPage = 85
 
 conn = DBSqlite.initDB()
 
@@ -39,7 +42,8 @@ def parseDetail(detailUrls):
 def main():
     global list_url
     global conn
-    for n in range(1,101):
+    global totalPage
+    for n in range(1,totalPage + 1):
         detailUrls = getList(getListHtml(list_url+('/pg%d'% n)))
         parseDetail(detailUrls)   
         time.sleep(3) 
