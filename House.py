@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 class House(object):
     def __init__(self,**kw):
         self.id=kw.get('id',None)
