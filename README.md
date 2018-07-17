@@ -6,7 +6,7 @@ HouseSpider 爬取 **链家网** 全国各地的房产交易记录.
 -----
 ## 如何运行项目
 安装python3, 运行`HouseSpider.py`即可.
-需要安装 `BeautifulSoup` 组件
+需要安装 `BeautifulSoup`,`requests` 组件
 
 ### 1. 目前可爬取的信息包括
 
